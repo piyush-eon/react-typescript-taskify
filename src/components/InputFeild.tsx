@@ -20,7 +20,7 @@ const InputFeild: React.FC<props> = ({ todo, setTodo, handleAdd }) => {
     >
       <input
         type="text"
-        placeholder="Enter a Todo"
+        placeholder="Enter a Task"
         value={todo}
         ref={inputRef}
         onChange={(e) => setTodo(e.target.value)}
