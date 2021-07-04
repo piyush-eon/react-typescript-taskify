@@ -21,6 +21,11 @@ const TodoList: React.FC<props> = ({
       <Droppable droppableId="TodosList">
         {(provided, snapshot) => (
           <div
+            style={{
+              minHeight: `${
+                snapshot.isDraggingOver ? (todos.length + 1) * 100 : 0
+              }px`,
+            }}
             className={`todos ${snapshot.isDraggingOver ? "dragactive" : ""}`}
             ref={provided.innerRef}
             {...provided.droppableProps}
@@ -43,6 +48,11 @@ const TodoList: React.FC<props> = ({
           <div
             ref={provided.innerRef}
             {...provided.droppableProps}
+            style={{
+              minHeight: `${
+                snapshot.isDraggingOver ? (CompletedTodos.length + 1) * 100 : 0
+              }px`,
+            }}
             className={`todos  ${
               snapshot.isDraggingOver ? "dragcomplete" : "remove"
             }`}
