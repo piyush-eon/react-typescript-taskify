@@ -4,10 +4,10 @@ import SingleTodo from "./SingleTodo";
 import { Droppable } from "react-beautiful-dnd";
 
 interface props {
-  todos: Todo[];
-  setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
-  setCompletedTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
-  CompletedTodos: Todo[];
+  todos: Array<Todo>;
+  setTodos: React.Dispatch<React.SetStateAction<Array<Todo>>>;
+  setCompletedTodos: React.Dispatch<React.SetStateAction<Array<Todo>>>;
+  CompletedTodos: Array<Todo>;
 }
 
 const TodoList: React.FC<props> = ({
