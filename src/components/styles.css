@@ -61,16 +61,17 @@
   background-color: rgb(50, 195, 205);
 }
 
+
+.remove {
+  background-color: rgb(235, 103, 80);
+}
+
 .dragactive {
   background-color: rgb(0, 221, 236);
 }
 
 .dragcomplete {
   background-color: rgb(255, 38, 0);
-}
-
-.remove {
-  background-color: rgb(235, 103, 80);
 }
 
 .todos__heading {
